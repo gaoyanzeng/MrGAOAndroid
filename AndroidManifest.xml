@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.things01.firstandroid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.things01.firstandroid.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.things01.firstandroid.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.things01.firstandroid.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.things01.firstandroid.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.things01.firstandroid.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       <activity
+            android:name="com.things01.firstandroid.TextPlay"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.things01.firstandroid.Email"
+            android:label="@string/app_name" >
+        </activity>
+       <activity
+            android:name="com.things01.firstandroid.Camera"
+            android:label="Camera and Wallpaper" >
+        </activity>
+       <activity
+            android:name="com.things01.firstandroid.Data"
+            android:label="Data" >
+        </activity>
+       <activity
+            android:name="com.things01.firstandroid.OpenedClass"
+            android:label="OpenedClass" >
+        </activity>
+        <activity
+            android:name="com.things01.firstandroid.AboutUs"
+            android:label="www.01things.com"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.things01.firstandroid.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Prefs"
+            android:label="www.01things.com">
+            <intent-filter>
+                <action android:name="com.things01.firstandroid.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       <activity
+            android:name="com.things01.firstandroid.GFX"
+            android:label="@string/app_name" >
+        </activity>        
+      <activity
+            android:name="com.things01.firstandroid.GFXSurface"
+            android:label="@string/app_name" >
+        </activity>   
+      <activity 
+          android:name="com.things01.firstandroid.SoundStuff"
+          android:label="@string/app_name">
+      </activity> 
+      <activity 
+          android:name="com.things01.firstandroid.Slider"
+          android:label="@string/app_name">
+      </activity>
+      <activity 
+          android:name="com.things01.firstandroid.Tabs"
+          android:label="@string/app_name">
+      </activity>
+      <activity
+          android:name="com.things01.firstandroid.SimpleBrowser"
+          android:label="@string/app_name">
+      </activity>
+      <activity
+          android:name="com.things01.firstandroid.Flipper"
+          android:label="@string/app_name">
+      </activity>
+      <activity 
+          android:name="com.things01.firstandroid.SharedPrefs"
+          android:label="@string/app_name">
+      </activity>
+      <activity 
+          android:name="com.things01.firstandroid.ExternalData"
+          android:label="@string/app_name">
+      </activity>
+   </application>
+</manifest>
+
