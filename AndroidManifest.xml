@@ -120,6 +120,19 @@
           android:name="com.things01.firstandroid.ExternalData"
           android:label="@string/app_name">
       </activity>
+      <activity
+          android:name="com.things01.firstandroid.SQLiteExample"
+          android:label="@string/app_name">          
+      </activity>
+      <activity
+          android:name="com.things01.firstandroid.SQLView"
+          android:label="@string/app_name">
+          <intent-filter>
+                <action android:name="com.things01.firstandroid.SQLVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+          </intent-filter>
+      </activity>
    </application>
 </manifest>
 
